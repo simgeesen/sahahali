@@ -1,0 +1,32 @@
+.search-bar {
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    padding: 15px;
+    width: 30vw;
+    margin-bottom: 30px;
+}
+
+.search-bar-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.search-bar-clear-btn {
+    position: absolute;
+    border: none;
+    bottom: 45%;
+    right: 0;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.search-bar-clear-btn:hover {
+    color: red;
+}
+
+.search-bar-clear-btn:active {
+    transform: scale(0.9);
+}

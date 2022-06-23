@@ -1,0 +1,35 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 20vw;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid black;
+    cursor: pointer;
+
+
+
+}
+
+
+
+.card-image {
+    width: 20vw;
+    height: 25vh;
+    min-height: 10vw;
+    min-width: 10vw;
+    max-height: 20vw;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.card-info {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+
+}

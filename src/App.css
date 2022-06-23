@@ -1,0 +1,46 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.button-confirm {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+    
+}
+.button-confirm:active{
+    transform: scale(0.9);
+    
+    
+}
+
+
+
+
+.button-cancel {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    
+
+}

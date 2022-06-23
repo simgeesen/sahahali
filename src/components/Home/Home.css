@@ -1,0 +1,87 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+
+}
+
+.search-bar-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+.rolling-ball {
+    background: url("/public/images/football.png") center;
+    background-size: cover;
+    position: fixed;
+    animation-fill-mode: forwards;
+    width: 150px;
+    height: 150px;
+    animation: hide 0s, rollin 5s forwards;
+    animation-delay: 5s;
+    visibility: hidden;
+
+
+}
+
+@-webkit-keyframes hide {
+    to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes hide {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@keyframes rollin {
+    from {
+        margin-left: 200%;
+        transform: rotate(0deg);
+        visibility: visible;
+    }
+
+    to {
+        margin-left: -200%;
+        transform: rotate(-1500deg);
+        width: 100px;
+        height: 100px;
+        display: none;
+
+
+    }
+}
+
+.list-container {
+    text-align: center;
+    width: 100%;
+}
+
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    width: 70%;
+    margin: auto;
+}
+
+li {
+    column-count: auto;
+    float: left;
+    padding: 2px 5px;
+}
+
+.list-element {
+    margin: 10px;
+}

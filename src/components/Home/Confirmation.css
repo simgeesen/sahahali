@@ -1,0 +1,134 @@
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    z-index: -15;
+    animation: swipe 2s forwards;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background: white;
+    width: 56vw;
+    /*border: solid black;*/
+    border-radius: 5px;
+
+
+}
+
+.confirmation-input-label {
+    font-size: 18px;
+}
+
+.confirmation-date-picker {
+    text-align: center;
+    font-size: 18px;
+}
+
+.confirmation-ol{
+    padding: 20px 10px 20px 50px;
+    list-style-type: none;
+    width: 90%;
+    margin: 0;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    height: 400px;
+
+}
+.confirmation-li{
+    display: flex;
+    padding: 1%;
+    width: 95%;
+    place-items: center;
+    border: solid black;
+    border-radius: 5px;
+    margin: 1%;
+    background: white;
+
+}
+
+.confirmation-checkbox-label{
+    font-size: 18px;
+
+}
+
+.confirmation-checkbox{
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 2.15em;
+    height: 2.15em;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+
+}
+
+.confirmation-checkbox::before {
+    content: "";
+    width: 0.95em;
+    height: 0.95em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em green;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+}
+.confirmation-checkbox:checked::before {
+    transform: scale(1.5);
+}
+.confirmation-checkbox:focus {
+    /*outline: max(2px, 0.15em) solid currentColor;*/
+    /*outline-offset: max(2px, 0.15em);*/
+}
+.confirmation-checkbox:disabled {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);    color: red;
+    cursor: not-allowed;
+    box-shadow: inset 2em 2em red;
+
+
+}
+
+.confirmation-btn-wrapper{
+    display: flex;
+}
+.confirmation-submit-btn{
+    background: green;
+    text-transform: uppercase;
+    color: white;
+    width: 30vw;
+    height: 10vh;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+@keyframes swipe {
+    from {
+        /*margin-top: 200%;*/
+        transform: translateY(20%);
+        visibility: visible;
+    }
+
+    to {
+        /*margin-top: -200%;*/
+        transform: translateY(115%);
+
+
+
+    }
+}
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    width: 90%;
+
+
+}
